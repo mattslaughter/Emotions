@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <title>Emotional Checkin</title>
+
+    <!--  -->
+
+    <style>
+        .pod {
+            padding: 10px;
+        }
+        
+        .box h1,
+        h2,
+        h3,
+        h4,
+        strong {
+            text-align: center;
+        }
+        
+        .box {
+            box-shadow: 2px 2px 2px 2px #777;
+            background: #FFF;
+            margin: 40px auto;
+            padding: 10px;
+        }
+        
+        .btn-group-wrap {
+            text-align: center;
+        }
+        
+        div.btn-group {}
+        
+        a {
+            float: left;
+        }
+        
+        .topdiv {
+            margin-top: 70px;
+        }
+    </style>
+
+</head>
+<!--
+        ID wants desires pleasure/pain
+        superego questioner judge
+        ego reality others
+        Conscious Ego - What others and that person are aware of in that individual making decisions.
+        Personal Unconscious - Part of the person that they are unaware of.
+        Collective Unconscious - Shared memories of all mankind.
+
+        There are also four functions of the mind in each person. Thinking (solving problems) vs. Feeling (emotions). Sensing (Do you feel something there?) vs. Intuiting (Asking questions about a subject).
+
+
+
+        -->
+
+<body>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="jumbotron topdiv">
+
+            </div>
+
+            <div id="disp"></div>
+
+            <div id="emoView">
+
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+    <script src="main.js"></script>
+
+
+    <script>
+        //extends string function so you can cap the first letter of a string
+        String.prototype.capitalize = function () {
+            return this.charAt(0).toUpperCase() + this.slice(1);
+        }
+
+
+
+        //-------------------------------------------    
+
+        //new instance of class constructor in script.js
+        //Hey....this was alive earlier
+        //var emo = new Emotions();
+
+        //init function
+        function initi() {
+
+
+            //example how to call function in array    
+            //  var x = emo.emoArray[0]();
+
+
+            //emo.mind();
+            emo.buildEmoView();
+            //populates the array with current values
+            getValues();
+
+
+
+        }
+
+        initi();
+
+        //creates a loop
+        //        setInterval(function() {
+        //        emo.mind();
+        //        }, emo.interval );
+    </script>
+
+</body>
+
+</html>
